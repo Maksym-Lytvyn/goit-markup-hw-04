@@ -61,6 +61,14 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 }
+.container-f {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex; 
+    align-items: baseline;
+}
 .header-class {
     display: flex;
     flex-direction: row;
@@ -214,6 +222,7 @@ img {
 .benefit-point {
     width: 264px;
     flex-basis: calc((100% - 72px) / 4);
+    height: 112px;
 }
 .description {
     font-size: 16px;
@@ -276,6 +285,25 @@ img {
     text-transform: capitalize;
     color: #2E2F42;
 }
+.team-list-item1 {
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+}
+.team-list-item2 {
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+}
+.team-list-item3 {
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+}
+.team-list-item4 {
+    width: 40px;
+    height: 40px;
+}
 .worker-card1 {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -315,6 +343,14 @@ img {
 .social-media {
     display: flex;
     align-items: center;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 16px;
+}
+.media-list-element {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
 }
 .insta {
     width: 16px;
@@ -343,26 +379,22 @@ img {
 .insta-f {
     width: 16px;
     height: 16px;
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--light);
+    fill: white;
 }
 .face-f {
     width: 16px;
     height: 16px;
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--light);
+    fill: white;
 }
 .twit-f {
     width: 16px;
     height: 16px;
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--light);
+    fill: white;
 }
 .linke-f {
     width: 16px;
     height: 16px;
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--light);
+    fill: white;
 }
 .customers-section {
     padding-top: 120px;
@@ -387,6 +419,10 @@ img {
     align-content: center;
     margin-left: 156px;
     margin-right: 156px;
+}
+.cmp-list-item {
+    width: 168px;
+    height: 88px;
 }
 .bckg-footer {
     background-color: var(--text);
@@ -414,15 +450,37 @@ img {
     letter-spacing: 0.02em;
     color: var(--accent);
 }
+.footer-description-plus {
+    font-size: 16px;
+    margin-top: 16px;
+    width: 264px;
+    padding-left: 18px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+}
 .footer-content {
     display: flex;
     align-items: center;
 }
+.footer-media-list {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+.footer-description-div {
+    margin-right: 120px;
+}
 
 /* SVGs adjustment */
 .bene-svgs {
-    width: 264px;
-    height: 112px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;		
+    align-items: center;
+    border-radius: 50%;
 }
 .bene-svg1 {
     padding-top: 24px;
@@ -470,32 +528,50 @@ img {
 
 .team-svgs {
     background-color: var(--primary-brand);
+    display: flex;
+    justify-content: center;		
+    align-items: center;
 }
 .team-svg1 {
-    padding: 15px;
-    border-radius: 50px;
-    margin-left: 16px;
-    margin-right: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;		
+    align-items: center;
+    border-radius: 50%;
 }
 .team-svg2 {
-    padding: 15px;
-    border-radius: 50px;
-    margin-right: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;		
+    align-items: center;
+    border-radius: 50%;
 }
 .team-svg3 {
-    padding: 15px;
-    border-radius: 50px;
-    margin-right: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;		
+    align-items: center;
+    border-radius: 50%;
 }
 .team-svg4 {
-    padding: 15px;
-    border-radius: 50px;
-    margin-right: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;		
+    align-items: center;
+    border-radius: 50%;
 }
 
 .cmp-svgs {
-    width: 168px;
-    height: 88px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;		
+    align-items: center;
+    border-radius: 50%;
 }
 .cmp-svgs:hover {
     fill: #4D5AE5;
@@ -581,26 +657,42 @@ img {
     border-radius: 4px;
 }
 .footer-svgs {
-    margin-top: 100px;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;		
+    align-items: center;
 }
 .footer-svg1 {
-    padding: 13px;
-    margin-right: 16px;
-    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;		
+    align-items: center;
+    border-radius: 50%;
 }
 .footer-svg2 {
-    padding: 13px;
-    margin-right: 16px;
-    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;		
+    align-items: center;
+    border-radius: 50%;
 }
 .footer-svg3 {
-    padding: 13px;
-    margin-right: 16px;
-    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;		
+    align-items: center;
+    border-radius: 50%;
 }
 .footer-svg4 {
-    padding: 13px;
-    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;		
+    align-items: center;
+    border-radius: 50%;
 }
 /* Portfolio part */
 .merch-section {
