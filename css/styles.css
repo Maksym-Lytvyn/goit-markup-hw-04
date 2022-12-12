@@ -124,11 +124,11 @@ img {
     display: flex;
     margin-right: 40px;
 }
-.nav-links:hover {
-    color: #404BBF;
+.exact-nav-links:hover {
+    color: var(--primary-brand);
 }
-.nav-links:focus {
-    color: #404BBF;
+.exact-nav-links:focus {
+    color: var(--primary-brand);
 }
 .nav-segment {
     margin-right: auto;
@@ -145,10 +145,10 @@ img {
     display: flex;
     flex-direction: row;
 }
-.contact:hover {
+.contact-links:hover {
     color: var(--primary-brand);
 }
-.contact:focus {
+.contact-links:focus {
     color: var(--primary-brand);
 }
 .contact-links {
@@ -186,15 +186,16 @@ img {
     color: #FFFFFF;
     margin-top: 72px;
     background-color: var(--primary-brand);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
 }
 .btn:hover {
     background-color: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .btn:focus {
     background-color: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hidden {
     display: none;
@@ -264,7 +265,6 @@ img {
     padding-bottom: 120px;
 }
 .team {
-    text-align: center;
     margin-bottom: 72px;
     font-family: 'Roboto';
     font-style: normal;
@@ -312,6 +312,82 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
+.social-media {
+    display: flex;
+    align-items: center;
+}
+.insta {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-brand);
+    fill: white;
+}
+.face {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-brand);
+    fill: white;
+}
+.twit {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-brand);
+    fill: white;
+}
+.linke {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-brand);
+    fill: white;
+}
+.insta-f {
+    width: 16px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--light);
+}
+.face-f {
+    width: 16px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--light);
+}
+.twit-f {
+    width: 16px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--light);
+}
+.linke-f {
+    width: 16px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--light);
+}
+.customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.cmp-title {
+    text-align: center;
+    margin-bottom: 72px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+.cmp-list {
+    list-style-type: none;
+    display: flex;
+    align-content: center;
+    margin-left: 156px;
+    margin-right: 156px;
+}
 .bckg-footer {
     background-color: var(--text);
     display: block;
@@ -338,7 +414,194 @@ img {
     letter-spacing: 0.02em;
     color: var(--accent);
 }
+.footer-content {
+    display: flex;
+    align-items: center;
+}
 
+/* SVGs adjustment */
+.bene-svgs {
+    width: 264px;
+    height: 112px;
+}
+.bene-svg1 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 102px;
+    padding-right: 102px;
+    width: 59px;
+    height: 64px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    margin-right: 24px;
+}
+.bene-svg2 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 59px;
+    height: 64px;
+    padding-left: 102px;
+    padding-right: 102px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+}
+
+.bene-svg3 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 59px;
+    height: 64px;
+    padding-left: 102px;
+    padding-right: 102px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+}
+
+.bene-svg4 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 59px;
+    height: 64px;
+    padding-left: 102px;
+    padding-right: 102px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+}
+
+.team-svgs {
+    background-color: var(--primary-brand);
+}
+.team-svg1 {
+    padding: 15px;
+    border-radius: 50px;
+    margin-left: 16px;
+    margin-right: 24px;
+}
+.team-svg2 {
+    padding: 15px;
+    border-radius: 50px;
+    margin-right: 24px;
+}
+.team-svg3 {
+    padding: 15px;
+    border-radius: 50px;
+    margin-right: 24px;
+}
+.team-svg4 {
+    padding: 15px;
+    border-radius: 50px;
+    margin-right: 24px;
+}
+
+.cmp-svgs {
+    width: 168px;
+    height: 88px;
+}
+.cmp-svgs:hover {
+    fill: #4D5AE5;
+}
+.cmp-svg1 {
+    margin-left: 156px;
+    margin-right: 24px;
+}
+.cmp-svg2 {
+    margin-right: 24px; 
+}
+.cmp-svg3 {
+    margin-right: 24px;
+}
+
+.cmp-svg4 {
+    margin-right: 24px;
+}
+.cmp-svg5 {
+    margin-right: 24px;
+}
+.cmp-svg6 {
+    margin-right: auto;
+}
+.cmp1 {
+    width: 104px;
+    height: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+.cmp2 {
+    width: 104px;
+    height: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+.cmp3 {
+    width: 104px;
+    height: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+.cmp4 {
+    width: 104px;
+    height: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+.cmp5 {
+    width: 104px;
+    height: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+.cmp6 {
+    width: 104px;
+    height: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+.footer-svgs {
+    margin-top: 100px;
+}
+.footer-svg1 {
+    padding: 13px;
+    margin-right: 16px;
+    border-radius: 50px;
+}
+.footer-svg2 {
+    padding: 13px;
+    margin-right: 16px;
+    border-radius: 50px;
+}
+.footer-svg3 {
+    padding: 13px;
+    margin-right: 16px;
+    border-radius: 50px;
+}
+.footer-svg4 {
+    padding: 13px;
+    border-radius: 50px;
+}
 /* Portfolio part */
 .merch-section {
     padding-top: 96px;
@@ -396,6 +659,10 @@ img {
     flex-basis: calc((100% - 48px) / 3);
     border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.merch-rows:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
 }
 .project-name {
     font-weight: 500;
