@@ -70,9 +70,6 @@ img {
     align-items: baseline;
 }
 .header-class {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -178,8 +175,10 @@ img {
 .title-section {
     padding-top: 192px;
     padding-bottom: 192px;
-    background-color: #2E2F42;
     text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url("../../images/people-office_1.jpg");
+    background-size: cover;
+
 }
 .btn {
     font-weight: 500;
@@ -218,11 +217,13 @@ img {
 }
 .bene-section {
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 .benefit-point {
     width: 264px;
     flex-basis: calc((100% - 72px) / 4);
     height: 112px;
+    background-color: #F4F4FD;
 }
 .description {
     font-size: 16px;
@@ -307,18 +308,22 @@ img {
 .worker-card1 {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    background-color: white;
 }
 .worker-card2 {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    background-color: white;
 }
 .worker-card3 {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    background-color: white;
 }
 .worker-card4 {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    background-color: white;
 }
 .worker-data {
     padding-top: 32px;
@@ -345,7 +350,7 @@ img {
     align-items: center;
     list-style-type: none;
     margin-top: 12px;
-    padding-left: 16px;
+    padding-left: 0;
 }
 .media-list-element {
     width: 40px;
@@ -355,25 +360,24 @@ img {
 .insta {
     width: 16px;
     height: 16px;
-    background-color: var(--primary-brand);
     fill: white;
 }
 .face {
     width: 16px;
     height: 16px;
-    background-color: var(--primary-brand);
+    
     fill: white;
 }
 .twit {
     width: 16px;
     height: 16px;
-    background-color: var(--primary-brand);
+    
     fill: white;
 }
 .linke {
     width: 16px;
     height: 16px;
-    background-color: var(--primary-brand);
+    
     fill: white;
 }
 .insta-f {
@@ -423,6 +427,8 @@ img {
 .cmp-list-item {
     width: 168px;
     height: 88px;
+    margin-right: 24px;
+
 }
 .bckg-footer {
     background-color: var(--text);
@@ -452,9 +458,7 @@ img {
 }
 .footer-description-plus {
     font-size: 16px;
-    margin-top: 16px;
     width: 264px;
-    padding-left: 18px;
     margin-bottom: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -476,52 +480,37 @@ img {
 /* SVGs adjustment */
 .bene-svgs {
     width: 100%;
-    height: 100%;
+    height: 112px;
     display: flex;
     justify-content: center;		
     align-items: center;
     border-radius: 50%;
+    background-color: #F4F4FD;
 }
 .bene-svg1 {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 102px;
-    padding-right: 102px;
-    width: 59px;
-    height: 64px;
+    width: 70px;
+    height: 70px;
     background-color: #F4F4FD;
     border-radius: 4px;
     margin-right: 24px;
 }
 .bene-svg2 {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    width: 59px;
-    height: 64px;
-    padding-left: 102px;
-    padding-right: 102px;
+    width: 70px;
+    height: 70px;
     background-color: #F4F4FD;
     border-radius: 4px;
 }
 
 .bene-svg3 {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    width: 59px;
-    height: 64px;
-    padding-left: 102px;
-    padding-right: 102px;
+    width: 70px;
+    height: 70px;
     background-color: #F4F4FD;
     border-radius: 4px;
 }
 
 .bene-svg4 {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    width: 59px;
-    height: 64px;
-    padding-left: 102px;
-    padding-right: 102px;
+    width: 70px;
+    height: 70px;
     background-color: #F4F4FD;
     border-radius: 4px;
 }
@@ -548,6 +537,9 @@ img {
     align-items: center;
     border-radius: 50%;
 }
+.team-svgs:hover {
+    background-color: var(--success);
+}
 .team-svg3 {
     width: 100%;
     height: 100%;
@@ -566,12 +558,11 @@ img {
 }
 
 .cmp-svgs {
-    width: 100%;
-    height: 100%;
+    width: 170px;
+    height: 92px;
     display: flex;
+    margin-left: 156px;
     justify-content: center;		
-    align-items: center;
-    border-radius: 50%;
 }
 .cmp-svgs:hover {
     fill: #4D5AE5;
@@ -597,70 +588,37 @@ img {
     margin-right: auto;
 }
 .cmp1 {
-    width: 104px;
-    height: 56px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .cmp2 {
-    width: 104px;
-    height: 56px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .cmp3 {
-    width: 104px;
-    height: 56px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .cmp4 {
-    width: 104px;
-    height: 56px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .cmp5 {
-    width: 104px;
-    height: 56px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .cmp6 {
-    width: 104px;
-    height: 56px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .footer-svgs {
-    background-color: var(--dark);
+    background-color: var(--primary-brand);
     display: flex;
     justify-content: center;		
     align-items: center;
+}
+.footer-svgs:hover {
+    background-color: var(--success);
 }
 .footer-svg1 {
     width: 100%;
@@ -701,7 +659,6 @@ img {
 }
 .merch-info {
     padding-left: 16px;
-    padding-right: 95px;
     padding-bottom: 32px;
 }
 .filter-btns {
@@ -721,6 +678,11 @@ img {
     padding-left: 16px;
     padding-right: 16px;
     color: #4D5AE5;
+    cursor: pointer;
+}
+.display-btn:hover {
+    background: var(--primary-brand);
+    color: white;
     cursor: pointer;
 }
 .total-display-btn {
@@ -746,6 +708,7 @@ img {
     display:  flex; 
     flex-wrap: wrap; 
     gap: 24px;
+    padding: 0;
 }
 .merch-rows {
     flex-basis: calc((100% - 48px) / 3);
@@ -762,7 +725,6 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-top: 32px;
-    margin-left: 16px;
     color: var(--dark);
 }
 .categories {
@@ -770,6 +732,5 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-top: 8px;
-    margin-left: 16px;
     color: var(--text);
 }
