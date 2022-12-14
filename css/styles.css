@@ -176,7 +176,7 @@ img {
     padding-top: 192px;
     padding-bottom: 192px;
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url("../../images/people-office_1.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url("../images/people-office_1.jpg");
     background-size: cover;
 
 }
@@ -349,8 +349,18 @@ img {
     display: flex;
     align-items: center;
     list-style-type: none;
+    justify-content: center;
     margin-top: 12px;
     padding-left: 0;
+}
+.social-media:focus {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 12px;
+    padding-left: 0;
+    background-color: var(--success);
 }
 .media-list-element {
     width: 40px;
@@ -424,10 +434,17 @@ img {
     margin-left: 156px;
     margin-right: 156px;
 }
+.cmp-list:hover {
+    fill: var(--primary-brand);
+}
+.cmp-list:focus {
+    fill: var(--primary-brand);
+}
 .cmp-list-item {
     width: 168px;
     height: 88px;
     margin-right: 24px;
+    border: 1px solid #8E8F99;	
 
 }
 .bckg-footer {
@@ -485,6 +502,7 @@ img {
     justify-content: center;		
     align-items: center;
     border-radius: 50%;
+    margin-bottom: 8px;
     background-color: #F4F4FD;
 }
 .bene-svg1 {
@@ -540,6 +558,9 @@ img {
 .team-svgs:hover {
     background-color: var(--success);
 }
+.team-svgs:focus {
+    background-color: var(--success);
+}
 .team-svg3 {
     width: 100%;
     height: 100%;
@@ -562,53 +583,78 @@ img {
     height: 92px;
     display: flex;
     margin-left: 156px;
-    justify-content: center;		
+    justify-content: center;
+    color: grey; 
+    border: 1px solid grey;	
 }
 .cmp-svgs:hover {
-    fill: #4D5AE5;
+    color: violet; 
+    border: 1px solid violet;
+}
+.cmp-svgs:focus {
+    color: violet; 
+    border: 1px solid violet;
 }
 .cmp-svg1 {
     margin-left: 156px;
     margin-right: 24px;
+    width: 104px;
+    height: 56px;
+    
+}
+.cmp-svg1:hover {
+    color: violet; 
+    border: 1px solid violet;
+}
+.cmp-svg1:focus {
+    color: violet; 
+    border: 1px solid violet;
 }
 .cmp-svg2 {
-    margin-right: 24px; 
+    margin-right: 24px;
+    width: 104px;
+    height: 56px;
 }
 .cmp-svg3 {
     margin-right: 24px;
+    width: 104px;
+    height: 56px;
 }
 
 .cmp-svg4 {
     margin-right: 24px;
+    width: 104px;
+    height: 56px;
 }
 .cmp-svg5 {
     margin-right: 24px;
+    width: 104px;
+    height: 56px;
 }
 .cmp-svg6 {
     margin-right: auto;
+    width: 104px;
+    height: 56px;
 }
 .cmp1 {
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
+    fill: currentColor;
+}
+.cmp1:hover {
+    fill: currentColor;
 }
 .cmp2 {
-    border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .cmp3 {
-    border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .cmp4 {
-    border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .cmp5 {
-    border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .cmp6 {
-    border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .footer-svgs {
@@ -618,6 +664,9 @@ img {
     align-items: center;
 }
 .footer-svgs:hover {
+    background-color: var(--success);
+}
+.footer-svgs:focus {
     background-color: var(--success);
 }
 .footer-svg1 {
@@ -681,6 +730,12 @@ img {
     cursor: pointer;
 }
 .display-btn:hover {
+    background: var(--primary-brand);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: white;
+    cursor: pointer;
+}
+.display-btn:focus {
     background: var(--primary-brand);
     color: white;
     cursor: pointer;
