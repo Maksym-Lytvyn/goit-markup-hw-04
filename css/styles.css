@@ -191,7 +191,7 @@ img {
     top: 432px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    margin-top: 72px;
+    margin-top: 48px;
     background-color: var(--primary-brand);
     border-radius: 4px;
     cursor: pointer;
@@ -223,7 +223,6 @@ img {
     width: 264px;
     flex-basis: calc((100% - 72px) / 4);
     height: 112px;
-    background-color: #F4F4FD;
 }
 .description {
     font-size: 16px;
@@ -349,9 +348,11 @@ img {
     display: flex;
     align-items: center;
     list-style-type: none;
-    justify-content: center;
     margin-top: 12px;
     padding-left: 0;
+}
+.team-align {
+    justify-content: center;
 }
 .social-media:focus {
     display: flex;
@@ -430,9 +431,9 @@ img {
 .cmp-list {
     list-style-type: none;
     display: flex;
+    justify-content: center;
     align-content: center;
-    margin-left: 156px;
-    margin-right: 156px;
+    align-items: center;
 }
 .cmp-list:hover {
     fill: var(--primary-brand);
@@ -440,9 +441,45 @@ img {
 .cmp-list:focus {
     fill: var(--primary-brand);
 }
-.cmp-list-item {
-    width: 170px;
-    height: 92px;
+.cmp-list-item1 {
+    width: 168px;
+    height: 88px;
+    border: 1px solid grey;
+    margin-right: 24px;
+}
+.cmp-list-item2 {
+    width: 168px;
+    height: 88px;
+    border: 1px solid grey;
+    margin-right: 24px;
+    
+}
+.cmp-list-item3 {
+    width: 168px;
+    height: 88px;
+    border: 1px solid grey;
+    margin-right: 24px;
+    
+}
+.cmp-list-item4 {
+    width: 168px;
+    height: 88px;
+    border: 1px solid grey;
+    margin-right: 24px;
+    
+}
+.cmp-list-item5 {
+    width: 168px;
+    height: 88px;
+    border: 1px solid grey;
+    margin-right: 24px;
+    
+}
+.cmp-list-item6 {
+    width: 168px;
+    height: 88px;
+    border: 1px solid grey;
+    
 }
 .bckg-footer {
     background-color: var(--text);
@@ -498,7 +535,7 @@ img {
     display: flex;
     justify-content: center;		
     align-items: center;
-    border-radius: 50%;
+    border-radius: 4px;
     margin-bottom: 8px;
     background-color: #F4F4FD;
 }
@@ -580,8 +617,8 @@ img {
     height: 100%;
     display: flex;
     justify-content: center;
-    color: grey;
-    border: 1px solid grey;	
+    align-items: center;
+    color: grey;	
 }
 .cmp-svgs:hover {
     color: #4D5AE5;
@@ -591,68 +628,56 @@ img {
     color: #4D5AE5;
     border: 1px solid #4D5AE5;
 }
-.cmp-svg1 {
-    margin-left: 156px;
-    margin-right: 24px;
-    width: 104px;
-    height: 56px;
-    
-}
-.cmp-svg1:hover {
-    color: violet; 
-    border: 1px solid violet;
-}
-.cmp-svg1:focus {
-    color: violet; 
-    border: 1px solid violet;
-}
+
 .cmp-svg2 {
     margin-right: 24px;
-    width: 104px;
-    height: 56px;
 }
 .cmp-svg3 {
     margin-right: 24px;
-    width: 104px;
-    height: 56px;
 }
 
 .cmp-svg4 {
     margin-right: 24px;
-    width: 104px;
-    height: 56px;
 }
 .cmp-svg5 {
     margin-right: 24px;
-    width: 104px;
-    height: 56px;
 }
 .cmp-svg6 {
     margin-right: auto;
+}
+.cmp1 {
+    fill: currentColor;
     width: 104px;
     height: 56px;
 }
-.cmp1 {
-    fill: currentColor
-}
 
 .cmp2 {
-    fill: currentColor
+    fill: currentColor;
+    width: 104px;
+    height: 56px;
 }
 .cmp3 {
-    fill: currentColor
+    fill: currentColor;
+    width: 104px;
+    height: 56px;
 }
 .cmp4 {
-    fill: currentColor
+    fill: currentColor;
+    width: 104px;
+    height: 56px;
 }
 .cmp5 {
-    fill: currentColor
+    fill: currentColor;
+    width: 104px;
+    height: 56px;
 }
 .cmp6 {
-    fill: currentColor
+    fill: currentColor;
+    width: 104px;
+    height: 56px;
 }
 .footer-svgs {
-    background-color: var(--primary-brand);
+    background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;		
     align-items: center;
